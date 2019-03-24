@@ -51,7 +51,14 @@
 			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="red2">
 				<div class="container-fluid">
-					
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item">
+							<button class="btn btn-danger"><span class="btn-label"><i class="flaticon-shapes"></i></span> Sign Up</button>
+						</li>
+						<li class="nav-item">
+							<button class="btn btn-danger"><span class="btn-label"><i class="flaticon-shapes"></i></span> Log in</button>
+						</li>
+					</ul>
 				</div>
 			</nav>
 			<!-- End Navbar -->

@@ -182,79 +182,110 @@
 					</ul>
 				</div>
 			</nav>
+		</div>
 			<!-- End Navbar -->
-			<div class="sidebar sidebar-style-2">
-				<div class="sidebar-wrapper scrollbar scrollbar-inner">
-					<div class="sidebar-content">
-						<div class="user">
-							<div class="avatar-sm float-left mr-2">
-								<img src="assets/img/profile1.jpg" alt="..." class="avatar-img rounded-circle">
-							</div>
-							<div class="info">
-								<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-									<span>
-										Monu Mahor
-										<span class="user-level">Administrator</span>
-										<span class="caret"></span>
-									</span>
-								</a>
-								<div class="clearfix"></div>
+		<div class="sidebar sidebar-style-2">
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<div class="user">
+						<div class="avatar-sm float-left mr-2">
+							<img src="assets/img/profile1.jpg" alt="..." class="avatar-img rounded-circle">
+						</div>
+						<div class="info">
+							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									Monu Mahor
+									<span class="user-level">Administrator</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
 
-								<div class="collapse in" id="collapseExample">
-									<ul class="nav">
-										<li>
-											<a href="#profile">
-												<span class="link-collapse">My Profile</span>
-											</a>
-										</li>
-										<li>
-											<a href="#edit">
-												<span class="link-collapse">Edit Profile</span>
-											</a>
-										</li>
-									</ul>
-								</div>
+							<div class="collapse in" id="collapseExample">
+								<ul class="nav">
+									<li>
+										<a href="#profile">
+											<span class="link-collapse">My Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#edit">
+											<span class="link-collapse">Edit Profile</span>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
-						<ul class="nav nav-primary">
-							<li class="nav-section">
-								<span class="sidebar-mini-icon">
-									<i class="fa fa-ellipsis-h"></i>
-								</span>
-								<h4 class="text-section">Dashboard</h4>
-							</li>
+					</div>
+					<ul class="nav nav-primary">
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Dashboard</h4>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#base">
+								<i class="fas fa-layer-group"></i>
+								<p>My Posts</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#base">
+								<i class="fas fa-pen-square"></i>
+								<p>Edit Posts</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#base">
+								<i class="fas fa-cogs"></i>
+								<p>Settings</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#base">
+								<i class="fas fa-sign-out-alt"></i>
+								<p>Logout</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- End Sidebar -->
+		<div class="main-panel">
+			<div class="content">
+
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+					<nav class="pull-left">
+						<ul class="nav">
 							<li class="nav-item">
-								<a data-toggle="collapse" href="#base">
-									<i class="fas fa-layer-group"></i>
-									<p>My Posts</p>
+								<a class="nav-link" href="#">
+									Home
 								</a>
 							</li>
 							<li class="nav-item">
-								<a data-toggle="collapse" href="#base">
-									<i class="fas fa-pen-square"></i>
-									<p>Edit Posts</p>
+								<a class="nav-link" href="#">
+									Help
 								</a>
 							</li>
 							<li class="nav-item">
-								<a data-toggle="collapse" href="#base">
-									<i class="fas fa-cogs"></i>
-									<p>Settings</p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a data-toggle="collapse" href="#base">
-									<i class="fas fa-sign-out-alt"></i>
-									<p>Logout</p>
+								<a class="nav-link" href="#">
+									Support Us
 								</a>
 							</li>
 						</ul>
+					</nav>
+					<div class="copyright ml-auto">
+						2019 by <a href="https://github.com/baby-developers">baby-developer</a>
 					</div>
 				</div>
-			</div>
-			<!-- End Sidebar -->
-
+			</footer>
 		</div>
-    </div>
+	</div>
     <!--   Core JS Files   -->
 	<?php include 'include/js_include.php' ?>
 </body>

@@ -12,66 +12,61 @@
 	<!-- Fonts and icons -->
 	<?php include 'include/font_include.php' ?>
 	<!-- CSS Files -->
-	<?php include 'include/css_include.php' ?>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
 </head>
 <body>
 	<div class="wrapper">
-		<div class="main-header">
 			<!-- Navbar Header -->
-			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+			<nav class="navbar navbar-dark bg-dark" >
 				<div class="container-fluid">
-                    <a href="index.php" class="logo">
-    					<img src="assets/img/logo4.png" alt="navbar brand" class="navbar-brand">
-    				</a>
+						<a href="index.php" class="logo">
+							<img src="assets/img/logo4.png" alt="navbar brand" class="navbar-brand">
+						</a>
 				</div>
 			</nav>
 			<!-- End Navbar -->
             <!-- Login -->
             <div class="container">
-                <div class="content-wrapper m-5">
-                    <div class="mx-5 col-6">
-                        <div class="card">
-                        	<h1 class="card-header">Hello there.!</h1>
+                <div class="content-wrapper m-4">
+                    <div class="row">
+                        <div class="card col-6 offset-3">
+                        	<h1 class="card-header">Welcome back.!</h1>
                         	<div class="card-body">
-                        		<h4 class="card-title">Please Login</h4>
-                        		<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        		<a href="#" class="btn btn-primary">Go somewhere</a>
+                        		<h3 class="card-title">Please Login</h3>
+								<form  method="POST" action="login-system/sign_in.php">
+									<div class="col">
+										<label class="col-form-label">Username</label>
+										<input type="text" class="form-control" name="username" placeholder="Username">
+									</div>
+									<div class="col">
+										<label class="col-form-label">Password</label>
+										<input type="text" class="form-control" name="password" placeholder="Password">
+									</div>
+									<p class="m-3"><a style="text-decoration: none;" href="login-system/forgot_form.php"> Forgot Password ? </a></p>
+									<p class="m-3"><a style="text-decoration: none;" href="register.php"> First Time ? Register here</a></p>
+									<div class="card-footer mt-4">
+										<button type="submit" name="login" class="btn btn-dark mr-1">Login</button>
+										<button type="button" id="HomeButton" name="back" class="btn btn-warning">Back</button>
+									</div>
+								</form>
                         	</div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <footer class="footer">
-				<div class="container-fluid">
-					<nav class="pull-left">
-						<ul class="nav">
-							<li class="nav-item">
-								<a class="nav-link" href="https://www.themekita.com">
-									ThemeKita
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Help
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Licenses
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="copyright ml-auto">
-						2019 made by Sujit Singh
-					</div>
-				</div>
+			</div>
+			<!-- Footer -->
+            <footer class="container-fluid m-3">
+				@2019 made by Sujit Singh
 			</footer>
 
-		</div>
-    </div>
     <!--   Core JS Files   -->
 	<?php include 'include/js_include.php' ?>
+	<script>
+        document.getElementById("HomeButton").onclick = function () {
+            location.href = "index.php";
+        };
+    </script>
 </body>
 </html>

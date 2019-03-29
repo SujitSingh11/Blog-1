@@ -12,21 +12,18 @@
 	<!-- Fonts and icons -->
 	<?php include 'include/font_include.php' ?>
 	<!-- CSS Files -->
-	<?php include 'include/css_include.php' ?>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="wrapper">
-		<div class="main-header">
-			<!-- Navbar Header -->
-			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
-				<div class="container-fluid">
-                    <a href="index.html" class="logo">
-    					<img src="assets/img/logo4.png" alt="navbar brand" class="navbar-brand">
-    				</a>
-				</div>
-			</nav>
-			<!-- End Navbar -->
-		</div>
+		<!-- Navbar Header -->
+		<nav class="navbar navbar-dark bg-dark" >
+			<div class="container-fluid">
+					<a href="index.php" class="logo">
+						<img src="assets/img/logo4.png" alt="navbar brand" class="navbar-brand">
+					</a>
+			</div>
+		</nav>
     </div>
     <!--   Core JS Files   -->
 	<?php include 'include/js_include.php' ?>
